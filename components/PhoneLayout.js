@@ -7,7 +7,8 @@ export default function PhoneLayout(props) {
 
   const getTime = () => {
     var date = new Date();
-    var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
+    var hours = date.getHours();
+    hours = hours % 12 || 12;
     var hours = hours < 10 ? "0" + hours : hours;
     var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
     var time = hours + ":" + minutes;
@@ -16,6 +17,10 @@ export default function PhoneLayout(props) {
     }
     setTime(time);
   }
+
+  useEffect(() => {
+    getTime();
+  })
 
   useEffect(() => {
     var timer = setInterval(() => getTime(), 1000);

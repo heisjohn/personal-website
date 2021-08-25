@@ -2,30 +2,30 @@ import PhoneLayout from '../components/PhoneLayout.js';
 import AppIcon from '../components/AppIcon.js';
 import styles from '../styles/Home.module.css';
 
-const Page = () => {
+const Home = () => {
   return (
     <PhoneLayout backgroundImage="/background.png" content={(
       <>
         <div className={styles.appContainer}>
           <div>
             <div className={styles.appRow}>
-              <AppIcon destination={"http://google.com/"} name="About Me" destinationInSite={true} image="/me.png" />
-              <AppIcon destination={"/resume.pdf"} name="Resume" destinationInSite={false} image="/resume.png" />
-              <AppIcon destination={"http://google.com/"} name="LinkedIn" destinationInSite={false} image="/linkedin.png" />
-              <AppIcon destination={"https://github.com/heisjohn/personal-website/"} name="Github" destinationInSite={false} image="/github.png" />
+              <AppIcon destination={"/about"} name="About Me" destinationInSite={true} image="/icons/me.png" />
+              <AppIcon destination={"/resume.pdf"} name="Resume" destinationInSite={false} image="/icons/resume.png" />
+              <AppIcon destination={"https://www.linkedin.com/in/he-john/"} name="LinkedIn" destinationInSite={false} image="/icons/linkedin.png" />
+              <AppIcon destination={"https://github.com/heisjohn/personal-website/"} name="Github" destinationInSite={false} image="/icons/github.png" />
             </div>
             <div className={styles.appRow}>
-              <AppIcon destination={"http://google.com/"} name="Photos" destinationInSite={true} image="/gallery.png" />
-              <AppIcon destination={"http://google.com/"} name="Music" destinationInSite={true} image="/music.png" />
-              <AppIcon destination={"http://google.com/"} name="Movies" destinationInSite={true} image="/movies.png" />
+              <AppIcon destination={"/photos"} name="Photos" destinationInSite={true} image="/icons/gallery.png" />
+              <AppIcon destination={"/music"} name="Music" destinationInSite={true} image="/icons/music.png" />
+              <AppIcon destination={"/movies"} name="Movies" destinationInSite={true} image="/icons/movies.png" />
             </div>
           </div>
         </div>
         <div className={styles.bottomBar}>
           <div className={styles.appRow}>
-            <AppIcon destination={"http://google.com/"} name="" destinationInSite={true} image="/me.png" />
-            <AppIcon destination={"/resume.pdf"} name="" destinationInSite={false} image="/resume.png" />
-            <AppIcon destination={"http://google.com/"} name="" destinationInSite={false} image="/linkedin.png" />
+            <AppIcon destination={"/about"} name="" destinationInSite={true} image="/icons/me.png" />
+            <AppIcon destination={"/resume.pdf"} name="" destinationInSite={false} image="/icons/resume.png" />
+            <AppIcon destination={"/linkedin"} name="" destinationInSite={false} image="/icons/linkedin.png" />
           </div>
         </div>
       </>
@@ -33,4 +33,4 @@ const Page = () => {
   );
 }
 
-export default Page;
+export default Home;
