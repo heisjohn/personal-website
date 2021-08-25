@@ -81,13 +81,14 @@
 }
 
 .wifi {
-  width: 2vh;
-  height: 1.45vh;
+  width: 1.95vh;
+  height: 1.4vh;
   margin-top: 0.1vh;
-  margin-right: 0.4vh;
+  margin-right: 0.5vh;
+  opacity: 0.9;
 
   background-image: url("/wifi.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -96,6 +97,7 @@
   height: 1.45vh;
   margin-left: 0.45vh;
   margin-top: 0.1vh;
+  opacity: 0.9;
 
   background-image: url("/battery.png");
   background-size: contain;
