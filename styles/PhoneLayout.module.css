@@ -1,0 +1,126 @@
+.backgroundContainer {
+  background-image: radial-gradient(white, #C0C0C0);
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outerContainer {
+  width: 48vh;
+  height: 100vh;
+  border-radius: 6vh;
+
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topBar {
+  width: 9vh;
+  height: 1vh;
+  border-radius: 0.5vh;
+  top: 4vh;
+
+  background-image: radial-gradient(#121212, #191919);
+
+  position: absolute;
+  align-self: center;
+}
+
+.bottomButton {
+  width: 5.5vh;
+  height: 5.5vh;
+  bottom: 1.4vh;
+  border-radius: 2.75vh;
+
+  background-image: radial-gradient(#0a0a0a, #101010);
+
+  position: absolute;
+  align-self: center;
+}
+
+.bottomButton:hover,
+.bottomButton:focus,
+.bottomButton:active {
+  background-image: radial-gradient(#141414, #1a1a1a);
+}
+
+.innerContainer {
+  height: 83vh;
+  width: 43vh;
+  margin-bottom: 2vh;
+  border-radius: 0.5vh;
+
+  background-image: url("/background.png");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.headerContainer {
+  width: 41.2vh;
+  height: 2vh;
+  padding-top: 0.3vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: row;
+}
+
+.wifi {
+  width: 2vh;
+  height: 1.45vh;
+  margin-top: 0.1vh;
+  margin-right: 0.4vh;
+
+  background-image: url("/wifi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.battery {
+  width: 0.9vh;
+  height: 1.45vh;
+  margin-left: 0.45vh;
+  margin-top: 0.1vh;
+
+  background-image: url("/battery.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.headerText {
+  font-size: 1.4vh;
+  margin-top: 0.1vh;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+.bottomText {
+  font-size: 1.4vh;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.link {
+  color: #10489c;
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration-line: underline;
+}
