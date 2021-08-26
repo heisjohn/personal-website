@@ -16,7 +16,7 @@ const Home = () => {
             </div>
             <div className={styles.appRow}>
               <AppIcon destination={"/photos"} name="Photos" destinationInSite={true} image="/icons/gallery.png" />
-              <AppIcon destination={"/music"} name="Music" destinationInSite={true} image="/icons/music.png" />
+              <AppIcon destination={"/music/albums-and-artists"} name="Music" destinationInSite={true} image="/icons/music.png" />
               <AppIcon destination={"/movies"} name="Movies" destinationInSite={true} image="/icons/movies.png" />
             </div>
           </div>

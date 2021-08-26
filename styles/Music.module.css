@@ -1,7 +1,81 @@
+.container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.8vh;
+  overflow-y: hidden;
+  position: relative;
+}
+
 .heading {
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
-    font-size: 2vh;
-    margin-left: 5vh;
-    color: white;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 2.2vh;
+  margin-left: 1.4vh;
+  margin-block: 0;
+  color: white;
+}
+
+.carouselContainer {
+  margin-top: 1.6vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2.4vh;
+}
+
+.bottomBar {
+  width: 100%;
+  padding-bottom: 0.6vh;
+  padding-top: 0.8vh;
+  background-color: #282828;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottomButton {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.bottomText {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1vh;
+  margin-top: 0.2vh;
+  margin-bottom: 0;
+  color: white;
+}
+
+.bottomIcon {
+  width: 2.3vh;
+  height: 2.3vh;
+  color: white;
+}
+
+.unselected:hover,
+.unselected:focus {
+  opacity: 0.75;
+}
+
+.selected {
+  opacity: 1;
+}
+
+.descriptionText {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 1.4vh;
+  margin-top: 0.4vh;
+  margin-bottom: 0;
+  font-size: 1.2vh;
+  letter-spacing: 0.01vh;
+  color: #ACACAC;
+}
+
+.playlistContainer {
+  margin-top: 1.2vh;
 }
