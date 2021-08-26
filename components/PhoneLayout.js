@@ -34,7 +34,7 @@ export default function PhoneLayout(props) {
       <div className={styles.outerContainer}>
         <div className={styles.topBar} />
         <Link href="/" passHref><div className={styles.bottomButton} /></Link>
-        <div className={styles.innerContainer} style={{backgroundImage: `url(${props.backgroundImage || null})`, backgroundColor: props.backgroundColor || 'transparent'}}>
+        <div className={styles.innerContainer} style={{backgroundImage: props.backgroundImage || "transparent", backgroundColor: props.backgroundColor || 'transparent'}}>
           <div className={styles.headerContainer}>
             <p className={styles.headerText}>{time}</p>
             <div className={styles.headerRight}>
