@@ -4,16 +4,16 @@ import carouselStyles from '../styles/Carousel.module.css';
 import { useState } from 'react';
 
 const Photos = () => {
-  const [index, setIndex] = useState(6);
-  const photos = ["/photos/math-team.jpg", "/photos/turnabout.jpg", "/photos/rei-tan.jpg", "/photos/white-sands.jpg", "/photos/white-sands-2.jpg", "/photos/saguaro.jpg", "/photos/saguaro-2.jpg"];
-  const descriptions = ["Me and Desi Nainar at the Math Team state competition, Sophomore year of high school",
+  const photos = ["/photos/math-team.jpg", "/photos/turnabout.jpg", "/photos/rei-tan.jpg", "/photos/white-sands.jpg", "/photos/white-sands-2.jpg", "/photos/saguaro.jpg", "/photos/saguaro-2.jpg", "/photos/saguaro-3.jpg"];
+  const descriptions = ["Me and Desi Nainar (#1 two person team) at the Math Team state competition, Sophomore year of high school",
                         "Turnabout, Senior year of high school",
                         "Me and Rei Tan at a party, Senior year of high school",
                         "White Sands National Park, Sophomore year of college",
                         "White Sands National Park, Sophomore year of college",
                         "Saguaro National Park, Sophomore year of college",
+                        "Saguaro National Park, Sophomore year of college",
                         "Saguaro National Park, Sophomore year of college"]
-  console.log(index);
+  const [index, setIndex] = useState(photos.length - 1);
 
   const goLeft = () => {
     if (index === 0) {
@@ -44,7 +44,7 @@ const Photos = () => {
           </div>
           <div className={`${carouselStyles.arrowContainer} ${carouselStyles.right}`} onClick={goLeft}>
             {/*eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/right-arrow.png" alt="left" className={carouselStyles.arrow} />
+            <img src="/right-arrow.png" alt="right" className={carouselStyles.arrow} />
           </div>
         </div>
         <div className={styles.carouselContainer}>

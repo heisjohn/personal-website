@@ -1,29 +1,46 @@
 .arrowContainer {
-    position: absolute;
-    width: 2.8vh;
-    height: 100%;
-    background-color: black;
-    opacity: 0.4;
+  position: absolute;
+  width: 2.8vh;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .arrowContainer:hover,
-  .arrowContainer:focus {
-    opacity: 0.65;
-  }
-  
-  .left {
-    left: 0;
-  }
-  
-  .right {
-    right: 0;
-  }
-  
-  .arrow {
-    width: 1.6vh;
-  }
+.arrowContainer:hover,
+.arrowContainer:focus {
+  opacity: 0.55;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.arrow {
+  width: 1.6vh;
+}
+
+.musicLeft {
+  border-top-right-radius: 3vh;
+  border-bottom-right-radius: 3vh;
+  height: 19vh;
+}
+.musicRight {
+  border-top-left-radius: 3vh;
+  border-bottom-left-radius: 3vh;
+  height: 19vh;
+}
+
+.hiddenButton {
+  border-color: transparent; 
+  background-color: transparent;
+}

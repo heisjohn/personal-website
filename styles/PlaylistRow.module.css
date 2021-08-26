@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container:hover {
+  background-color: #2A2A2A;
+}
+
+
+.imageNameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image {
+  width: 4.4vh;
+  height: 4.4vh;
+  margin: 0.7vh;
+  margin-bottom: 0.4vh;
+}
+
+.name {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3vh;
+  font-weight: 500;
+  letter-spacing: 0.01vh;
+  margin: 0;
+  color: white;
+  }
+  
+.artist {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1vh;
+  font-weight: 500;
+  letter-spacing: 0.01vh;
+  margin-bottom: 0;
+  margin-top: 0.3vh;
+  color: #ACACAC;
+}
+
+.time {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3vh;
+  margin: 0;
+  margin-right: 1.5vh;
+  font-weight: 500;
+  letter-spacing: 0.01vh;
+  color: #ACACAC;
+}
