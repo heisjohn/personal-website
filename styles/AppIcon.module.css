@@ -19,6 +19,7 @@
 .appImageContainer:hover,
 .appImageContainer:focus {
   opacity: 0.55;
+  cursor: pointer;
 }
 
 .nameContainer {

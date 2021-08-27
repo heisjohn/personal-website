@@ -51,4 +51,5 @@
 .poster:hover,
 .poster:focus {
   opacity: 0.75;
+  cursor: pointer;
 }
