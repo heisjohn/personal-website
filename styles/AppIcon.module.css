@@ -1,5 +1,6 @@
 .appContainer {
-  margin-inline: 1.45vh;
+  margin-left: 1.45vh;
+  margin-right: 1.45vh;
 
   display: flex;
   flex-direction: column;
