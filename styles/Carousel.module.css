@@ -44,3 +44,15 @@
   border-color: transparent; 
   background-color: transparent;
 }
+
+.moviesLeft {
+  border-top-right-radius: 3vh;
+  border-bottom-right-radius: 3vh;
+  height: 20.5vh;
+}
+
+.moviesRight {
+  border-top-left-radius: 3vh;
+  border-bottom-left-radius: 3vh;
+  height: 20.5vh;
+}
