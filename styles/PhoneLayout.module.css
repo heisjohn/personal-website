@@ -128,3 +128,25 @@
 .link:focus {
   text-decoration-line: underline;
 }
+
+.image {
+  width: 20vh;
+  height: 20vh;
+  opacity: 0.1;
+}
+
+.image:hover {
+  opacity: 0.6;
+}
+
+.offContainer {
+  width: 43vh;
+  height: 83vh;
+  margin-bottom: 1.8vh;
+  border-radius: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #111111;
+  align-items: center;
+  justify-content: center;
+}

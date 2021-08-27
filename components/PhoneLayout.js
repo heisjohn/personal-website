@@ -29,11 +29,31 @@ export default function PhoneLayout(props) {
     }
   })
 
+  if (props.off) {
+    return (
+      <div className={styles.backgroundContainer}>
+        <div className={styles.outerContainer}>
+          <div className={styles.topBar} />
+          <div className={styles.bottomButton} />
+          <div className={styles.offContainer}>
+            <Link href={"/home"} passHref>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img className={styles.image} src="/power.png" alt="power" />
+            </Link>
+          </div>
+        </div>
+        <p className={styles.bottomText}>
+          Made by John He. Check out this site on <a href="https://github.com/heisjohn/personal-website/" target="_blank" rel="noopener noreferrer" className={styles.link}>Github</a>!
+        </p>
+      </div>
+    )
+  }
+
   return (
     <div className={styles.backgroundContainer}>
       <div className={styles.outerContainer}>
         <div className={styles.topBar} />
-        <Link href="/" passHref><div className={styles.bottomButton} /></Link>
+        <Link href="/home" passHref><div className={styles.bottomButton} /></Link>
         <div className={styles.innerContainer} style={{backgroundImage: props.backgroundImage || "transparent", backgroundColor: props.backgroundColor || 'transparent'}}>
           <div className={styles.headerContainer}>
             <p className={styles.headerText}>{time}</p>
