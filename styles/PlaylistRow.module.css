@@ -20,8 +20,8 @@
 .image {
   width: 4.4vh;
   height: 4.4vh;
-  margin: 0.7vh;
-  margin-bottom: 0.4vh;
+  margin-block: 0.55vh;
+  margin-inline: 0.7vh;
 }
 
 .name {

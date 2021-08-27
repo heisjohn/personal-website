@@ -26,8 +26,7 @@
 
 .bottomBar {
   width: 100%;
-  padding-bottom: 0.6vh;
-  padding-top: 0.8vh;
+  padding-block: 0.8vh;
   background-color: #282828;
   position: absolute;
   bottom: 0;

@@ -1,0 +1,59 @@
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.header {
+  background-color: #EBECF0;
+  display: flex;
+  flex-direction: row;
+  padding-block: 0.9vh;
+  padding-left: 2.5vh;
+  border-width: 0;
+  border-style: solid;
+}
+
+.heading {
+  color: #68696D;
+  font-family: 'Times New Roman', serif, Georgia, Times, serif;
+  font-weight: 500;
+  font-size: 2.2vh;
+  margin: 0;
+}
+
+.mainContainer {
+  padding: 1.3vh;
+  box-shadow: 0vh -0.15vh 0.3vh lightgray;
+}
+
+.name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.7vh;
+  font-weight: 500;
+  color: black;
+  margin: 0;
+  margin-top: 0.35vh;
+}
+
+.line {
+  width: 100%;
+  background-color: #A2A9B1;
+  margin-top: 0.5vh;
+  height: 0.1vh;
+}
+
+.description {
+  font-family: sans-serif, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+  font-size: 1.2vh;
+  margin-top: 1vh;
+  line-height: 1.8vh;
+}
+
+.link {
+  color: #10489c;
+  font-weight: bold;
+  text-decoration-line: none;
+}

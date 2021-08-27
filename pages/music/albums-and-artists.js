@@ -8,15 +8,15 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import Link from 'next/link';
 
 const AlbumsAndArtists = () => {
-  const artists = [{'image': "/artists/james-murphy.jpg", 'name': "LCD Soundsystem"},
-                   {'image': "/artists/anderson.jpg", 'name': "Anderson .Paak"},
-                   {'image': "/artists/talking-heads.jpg", 'name': "Talking Heads"},
-                   {'image': "/artists/kendrick.jpg", 'name': "Kendrick Lamar"},
-                   {'image': "/artists/arcade-fire.jpg", 'name': "Arcade Fire"}]
-  const albums = [{'image': "/albums/malibu.jpg", 'name': "Malibu", 'artist': "Anderson .Paak"},
-                  {'image': "/albums/remain-in-light.jpg", 'name': "Remain in Light", 'artist': "Talking Heads"},
-                  {'image': "/albums/careful-kid.jpg", 'name': "Careful Kid", 'artist': "Yabadum"},
-                  {'image': "/albums/discovery.jpg", 'name': "Discovery", 'artist': "Daft Punk"}]
+  const artists = [{'image': "/artists/james-murphy.jpg", 'name': "LCD Soundsystem", 'link': 'https://www.youtube.com/watch?v=a9wnbPUgq6c&ab_channel=MaxKippax'},
+                   {'image': "/artists/anderson.jpg", 'name': "Anderson .Paak", 'link': 'https://www.youtube.com/watch?v=ferZnZ0_rSM&ab_channel=NPRMusic'},
+                   {'image': "/artists/talking-heads.jpg", 'name': "Talking Heads", 'link': 'https://youtu.be/bE1Ro_wPGIU?t=20'},
+                   {'image': "/artists/kendrick.jpg", 'name': "Kendrick Lamar", 'link': 'https://www.youtube.com/watch?v=cziv-WGRLcE&ab_channel=ArashTabatabaee'},
+                   {'image': "/artists/arcade-fire.jpg", 'name': "Arcade Fire", 'link': 'https://www.youtube.com/watch?v=Ie0EJPcaeSQ&ab_channel=ApartmentSessions'}]
+  const albums = [{'image': "/albums/malibu.jpg", 'name': "Malibu", 'artist': "Anderson .Paak", 'link': "https://www.youtube.com/watch?v=KXdW0g6jAxE&list=PLkLZNGcjKAQ_T6e9HD9YRiUcE85vouttE&ab_channel=AndersonPaak"},
+                  {'image': "/albums/remain-in-light.jpg", 'name': "Remain in Light", 'artist': "Talking Heads", 'link': "https://www.youtube.com/watch?v=w6T_X7MXg40&list=PLfimnwaZdumi5_CxCzqG3Mpv1PqHvr2VW&ab_channel=TalkingHeads-Topic"},
+                  {'image': "/albums/careful-kid.jpg", 'name': "Careful Kid", 'artist': "Yabadum", 'link': "https://www.youtube.com/watch?v=VxJbIJhImTU&list=PLCLwExT8jp9MSlpUD2ps_8jYqFix1XiBX&ab_channel=owenlewis"},
+                  {'image': "/albums/discovery.jpg", 'name': "Discovery", 'artist': "Daft Punk", 'link': "https://www.youtube.com/watch?v=A2VpR8HahKc&list=PLSdoVPM5WnndSQEXRz704yQkKwx76GvPV&ab_channel=DaftPunk"}]
   return (
     <PhoneLayout backgroundImage="linear-gradient(#333438, #121212)" content={(
       <div className={styles.container}>
@@ -34,7 +34,7 @@ const AlbumsAndArtists = () => {
               {artists.map((artist, i) => {
                 return (
                   <Slide index={i} key={i}>
-                    <MusicArtist image={artist.image} name={artist.name} />
+                    <MusicArtist image={artist.image} name={artist.name} destination={artist.link} />
                   </Slide>
                 );
               })}
@@ -67,7 +67,7 @@ const AlbumsAndArtists = () => {
               {albums.map((album, i) => {
                 return (
                   <Slide index={i} key={i}>
-                    <MusicAlbum image={album.image} name={album.name} artist={album.artist} />
+                    <MusicAlbum image={album.image} name={album.name} artist={album.artist} destination={album.link} />
                   </Slide>
                 );
               })}
