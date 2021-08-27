@@ -9,7 +9,9 @@ export default function AppIcon(props) {
         <Link href={props.destination} passHref>
           <div className={styles.appImageContainer} style={{backgroundImage: `url(${props.image || null})`}} />
         </Link>
-        <h1 className={styles.appName}>{props.name}</h1>
+        <div className={styles.nameContainer}>
+          <h1 className={styles.appName}>{props.name}</h1>
+        </div>
       </div>
     )
   } else {
@@ -18,7 +20,9 @@ export default function AppIcon(props) {
         <a href={props.destination} target="_blank" rel="noopener noreferrer">
           <div className={styles.appImageContainer} style={{backgroundImage: `url(${props.image || null})`}} />
         </a>
-        <h1 className={styles.appName}>{props.name}</h1>
+        <div className={styles.nameContainer}>
+          <h1 className={styles.appName}>{props.name}</h1>
+        </div>
       </div>
     )
   }

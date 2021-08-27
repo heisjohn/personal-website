@@ -18,7 +18,17 @@
 
 .appImageContainer:hover,
 .appImageContainer:focus {
-  opacitY: 0.55;
+  opacity: 0.55;
+}
+
+.nameContainer {
+  margin-top: 0.5vh;
+  margin-bottom: 0.55vh;
+  padding-left: 0.5vh;
+  padding-right: 0.5vh;
+  padding-bottom: 0.3vh;
+  background-color: rgba(19, 19, 19, 0.2);
+  border-radius: 0.9vh;
 }
 
 .appName {
@@ -26,6 +36,6 @@
   font-weight: 400;
   font-size: 1.3vh;
   opacity: 0.8;
-  margin-top: 0.5vh;
   color: white;
+  margin: 0;
 }
