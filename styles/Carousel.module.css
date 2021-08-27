@@ -15,6 +15,7 @@
 .arrowContainer:hover,
 .arrowContainer:focus {
   opacity: 0.55;
+  cursor: pointer;
 }
 
 .left {

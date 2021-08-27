@@ -61,6 +61,7 @@
 .unselected:hover,
 .unselected:focus {
   opacity: 0.75;
+  cursor: pointer;
 }
 
 .selected {

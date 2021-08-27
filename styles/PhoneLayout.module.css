@@ -52,6 +52,7 @@
 .bottomButton:focus,
 .bottomButton:active {
   background-image: radial-gradient(#141414, #1a1a1a);
+  cursor: pointer;
 }
 
 .innerContainer {
@@ -140,6 +141,7 @@
 
 .image:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .offContainer {
