@@ -39,10 +39,13 @@
   bottom: 2.1vh;
   border-radius: 2.8vh;
 
-  background-image: radial-gradient(#0a0a0a, #101010);
+  background-image: radial-gradient(#0a0a0a, #181818);
 
   position: absolute;
   align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bottomButton:hover,
@@ -149,4 +152,14 @@
   background-color: #111111;
   align-items: center;
   justify-content: center;
+}
+
+.square {
+  width: 2vh;
+  height: 2vh;
+  border-style: solid;
+  border-radius: 0.55vh;
+  border-width: 0.3vh;
+  border-color: white;
+  opacity: 0.4;
 }
