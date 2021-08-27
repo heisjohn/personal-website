@@ -54,6 +54,15 @@ const About = () => {
             <div className={styles.infoLine} />
             <div className={styles.infoRow}>
               <div className={styles.infoColumn}>
+                <p className={styles.infoTextLeft}><b>Parents</b></p>
+              </div>
+              <div className={styles.infoColumn}>
+                <p className={styles.infoTextRight}>Joseph He<br />Joanna Wang</p>
+              </div>
+            </div>
+            <div className={styles.infoLine} />
+            <div className={styles.infoRow}>
+              <div className={styles.infoColumn}>
                 <p className={styles.infoTextLeft}><b>Siblings</b></p>
               </div>
               <div className={styles.infoColumn}>
