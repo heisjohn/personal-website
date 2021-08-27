@@ -25,7 +25,7 @@ const Home = () => {
           <div className={styles.appRow}>
             <AppIcon destination={"/resume.pdf"} name="" destinationInSite={false} image="/icons/resume.png" />
             <AppIcon destination={"/about"} name="" destinationInSite={true} image="/icons/me.png" />
-            <AppIcon destination={"/linkedin"} name="" destinationInSite={false} image="/icons/linkedin.png" />
+            <AppIcon destination={"https://www.linkedin.com/in/he-john/"} name="" destinationInSite={false} image="/icons/linkedin.png" />
           </div>
         </div>
       </>

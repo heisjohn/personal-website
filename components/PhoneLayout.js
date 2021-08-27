@@ -34,7 +34,9 @@ export default function PhoneLayout(props) {
       <div className={styles.backgroundContainer}>
         <div className={styles.outerContainer}>
           <div className={styles.topBar} />
-          <div className={styles.bottomButton} />
+          <div className={styles.bottomButton}>
+            <div className={styles.square} />
+          </div>
           <div className={styles.offContainer}>
             <Link href={"/home"} passHref>
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -53,7 +55,11 @@ export default function PhoneLayout(props) {
     <div className={styles.backgroundContainer}>
       <div className={styles.outerContainer}>
         <div className={styles.topBar} />
-        <Link href="/home" passHref><div className={styles.bottomButton} /></Link>
+        <Link href="/home" passHref>
+          <div className={styles.bottomButton}>
+            <div className={styles.square} />
+          </div>
+        </Link>
         <div className={styles.innerContainer} style={{backgroundImage: props.backgroundImage || "transparent", backgroundColor: props.backgroundColor || 'transparent'}}>
           <div className={styles.headerContainer}>
             <p className={styles.headerText}>{time}</p>
