@@ -4,7 +4,10 @@ import carouselStyles from '../styles/Carousel.module.css';
 import { useState } from 'react';
 
 const Photos = () => {
-  const photos = ["/photos/math-team.jpg", "/photos/turnabout.jpg", "/photos/rei-tan.jpg", "/photos/white-sands.jpg", "/photos/white-sands-2.jpg", "/photos/saguaro.jpg", "/photos/saguaro-2.jpg", "/photos/saguaro-3.jpg"];
+  const photos = ["/photos/math-team.jpg", "/photos/turnabout.jpg", "/photos/rei-tan.jpg", 
+                  "/photos/white-sands.jpg", "/photos/white-sands-2.jpg", "/photos/saguaro.jpg", 
+                  "/photos/saguaro-3.jpg", "/photos/san-francisco.jpg", "/photos/sequoia-2.jpg", 
+                  "/photos/sequoia.jpg"];
   const descriptions = ["Me and Desi Nainar (#1 two person team) at the Math Team state competition, Sophomore year of high school",
                         "Turnabout, Senior year of high school",
                         "Me and Rei Tan at a party, Senior year of high school",
@@ -12,7 +15,9 @@ const Photos = () => {
                         "White Sands National Park, Sophomore year of college",
                         "Saguaro National Park, Sophomore year of college",
                         "Saguaro National Park, Sophomore year of college",
-                        "Saguaro National Park, Sophomore year of college"]
+                        "San Francisco, Sophomore year of college",
+                        "Sequoia National Park, Sophomore year of college",
+                        "Sequoia National Park, Sophomore year of college"]
   const [index, setIndex] = useState(photos.length - 1);
 
   const goLeft = () => {
