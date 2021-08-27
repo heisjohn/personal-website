@@ -2,6 +2,7 @@ import PhoneLayout from '../components/PhoneLayout.js';
 import styles from '../styles/Photos.module.css';
 import carouselStyles from '../styles/Carousel.module.css';
 import { useState } from 'react';
+import Head from 'next/head';
 
 const Photos = () => {
   const photos = ["/photos/math-team.jpg", "/photos/turnabout.jpg", "/photos/rei-tan.jpg", 
@@ -38,6 +39,10 @@ const Photos = () => {
   return (
     <PhoneLayout backgroundImage="radial-gradient(#333438, #202125)" content={(
       <>
+        <Head>
+          <title>John He | Photos</title>
+          <meta property="og:title" content="John He | Photos" key="title" />
+        </Head>
         <div className={styles.header}>
           <h1 className={styles.title}>Photos</h1>
         </div>
