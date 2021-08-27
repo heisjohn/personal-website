@@ -23,9 +23,9 @@ const Home = () => {
         </div>
         <div className={styles.bottomBar}>
           <div className={styles.appRow}>
-            <AppIcon destination={"/resume.pdf"} name="" destinationInSite={false} image="/icons/resume.png" />
-            <AppIcon destination={"/about"} name="" destinationInSite={true} image="/icons/me.png" />
-            <AppIcon destination={"https://www.linkedin.com/in/he-john/"} name="" destinationInSite={false} image="/icons/linkedin.png" />
+            <AppIcon destination={"/resume.pdf"} name="" destinationInSite={false} image="/icons/resume.png" bottom />
+            <AppIcon destination={"/about"} name="" destinationInSite={true} image="/icons/me.png" bottom />
+            <AppIcon destination={"https://www.linkedin.com/in/he-john/"} name="" destinationInSite={false} image="/icons/linkedin.png" bottom />
           </div>
         </div>
       </>
