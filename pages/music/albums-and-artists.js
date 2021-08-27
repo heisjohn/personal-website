@@ -6,6 +6,7 @@ import carouselStyles from '../../styles/Carousel.module.css';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const AlbumsAndArtists = () => {
   const artists = [{'image': "/artists/james-murphy.jpg", 'name': "LCD Soundsystem", 'link': 'https://www.youtube.com/watch?v=a9wnbPUgq6c&ab_channel=MaxKippax'},
@@ -20,6 +21,10 @@ const AlbumsAndArtists = () => {
   return (
     <PhoneLayout backgroundImage="linear-gradient(#333438, #121212)" content={(
       <div className={styles.container}>
+        <Head>
+          <title>John He | Music</title>
+          <meta property="og:title" content="John He | Music" key="title" />
+        </Head>
         <h1 className={styles.heading}>
           Favorite artists
         </h1>

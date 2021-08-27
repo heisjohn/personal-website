@@ -8,13 +8,15 @@ export default function PlaylistRow(props) {
     audio.volume = 0.3;
   }
 
+  const playAudio = () => {
+    if (typeof Audio != "undefined") {
+      audio.play();
+    }
+  }
+
   return (
     <a href={props.destination} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-      <div className={styles.container} onMouseEnter={() => {
-          if(typeof Audio != "undefined") {
-            audio.play();
-          }
-        }}
+      <div className={styles.container} onMouseEnter={playAudio}
         onMouseLeave={() => {
           if(typeof Audio != "undefined") {
             audio.pause();

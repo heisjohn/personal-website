@@ -1,11 +1,16 @@
 import PhoneLayout from '../components/PhoneLayout.js';
 import AppIcon from '../components/AppIcon.js';
 import styles from '../styles/Home.module.css';
+import Head from 'next/head';
 
 const Home = () => {
   return (
     <PhoneLayout backgroundImage="url(/background.png)" content={(
       <>
+        <Head>
+          <title>John He | Home</title>
+          <meta property="og:title" content="John He | Home" key="title" />
+        </Head>
         <div className={styles.appContainer}>
           <div>
             <div className={styles.appRow}>

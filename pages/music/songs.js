@@ -3,6 +3,7 @@ import styles from '../../styles/Music.module.css';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Link from "next/link";
 import PlaylistRow from "../../components/PlaylistRow.js"
+import Head from 'next/head';
 
 const Songs = () => {
   const favorites = [{ image: "/songs/the-dreamer.jpg", 
@@ -75,6 +76,10 @@ const Songs = () => {
   return (
     <PhoneLayout backgroundImage="linear-gradient(#333438, #121212, #121212, #121212)" content={(
       <div className={styles.container}>
+        <Head>
+          <title>John He | Music</title>
+          <meta property="og:title" content="John He | Music" key="title" />
+        </Head>
         <h1 className={styles.heading}>
           Favorite songs
         </h1>

@@ -1,10 +1,15 @@
 import PhoneLayout from '../components/PhoneLayout.js';
 import styles from '../styles/About.module.css';
+import Head from 'next/head';
 
 const About = () => {
   return (
     <PhoneLayout backgroundImage="radial-gradient(#35363A, #35363A)" content={(
       <div className={styles.container}>
+        <Head>
+          <title>John He | About</title>
+          <meta property="og:title" content="John He | About" key="title" />
+        </Head>
         <div className={styles.header}>
           <h1 className={styles.heading}>A</h1>
           <h1 className={styles.heading} style={{ fontVariant: 'small-caps', marginRight: "0.6vh" }}>bout</h1>
@@ -21,7 +26,7 @@ const About = () => {
              machine learning related classes. Outside of school, I work part-time as a full-stack app developer at{` `}
              <a href="https://www.doriot.com/" target="_blank" rel="noopener noreferrer" className={styles.link}>Doriot</a>, a startup based in Indiana University, where I am 
              working with a team to create an educational app about startup investing. <br/><br/>In my free time I enjoy playing chess casually (about 1900 ELO on{` `}
-             <a href="https://lichess.org/" target="_blank" rel="noopener noreferrer" className={styles.link}>lichess</a>), playing video games, watching movies, 
+             <a href="https://lichess.org/@/johnhe" target="_blank" rel="noopener noreferrer" className={styles.link}>lichess</a>), playing video games, watching movies, 
              and discovering new music.</p>
           <div className={styles.infoContainer}>
             <div className={styles.centered}>
@@ -39,7 +44,7 @@ const About = () => {
                 <p className={styles.infoTextLeft}><b>Born</b></p>
               </div>
               <div className={styles.infoColumn}>
-              <p className={styles.infoTextRight}>September 24, 2001 (age 19) Evanston, Illinois</p>
+              <p className={styles.infoTextRight}>September 2001 (age 19) <br /> Evanston, Illinois</p>
               </div>
             </div>
             <div className={styles.infoLine} />
@@ -49,15 +54,6 @@ const About = () => {
               </div>
               <div className={styles.infoColumn}>
                 <p className={styles.infoTextRight}>Libertyville High School<br/>University of California, Berkeley</p>
-              </div>
-            </div>
-            <div className={styles.infoLine} />
-            <div className={styles.infoRow}>
-              <div className={styles.infoColumn}>
-                <p className={styles.infoTextLeft}><b>Parents</b></p>
-              </div>
-              <div className={styles.infoColumn}>
-                <p className={styles.infoTextRight}>Joseph He<br />Joanna Wang</p>
               </div>
             </div>
             <div className={styles.infoLine} />

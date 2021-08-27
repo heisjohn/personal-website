@@ -4,6 +4,7 @@ import carouselStyles from '../styles/Carousel.module.css';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { useState } from 'react';
+import Head from 'next/head';
 
 const Movies = () => {
   const movies = [{ image: "/movie-posters/gone-girl.jpg", name: "Gone Girl", trailer: "https://www.youtube.com/embed/2-_-1nJf8Vg"},
@@ -19,6 +20,10 @@ const Movies = () => {
   return (
     <PhoneLayout backgroundImage="radial-gradient(#1B1B1B, #1B1B1B)" content={(
       <>
+        <Head>
+          <title>John He | Movies</title>
+          <meta property="og:title" content="John He | Movies" key="title" />
+        </Head>
         <div className={styles.header}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className={styles.image} src="/movies-title.png" alt="movies" />
