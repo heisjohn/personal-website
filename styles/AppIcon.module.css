@@ -18,12 +18,12 @@
 
 .appImageContainer:hover,
 .appImageContainer:focus {
-  opacitY: 0.55;
+  opacity: 0.55;
 }
 
 .nameContainer {
-  margin-top: 0.3vh;
-  margin-bottom: 0.4vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0.55vh;
   padding-left: 0.5vh;
   padding-right: 0.5vh;
   padding-bottom: 0.3vh;
