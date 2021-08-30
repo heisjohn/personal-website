@@ -17,7 +17,7 @@ const Songs = () => {
                        artist: "LCD Soundsystem",
                        time: "7:53",
                        audio: "/music-clips/home.mp3",
-                       destination: "https://www.youtube.com/watch?v=ETDCbQUYiAQ&ab_channel=LCDSoundsystem-Topic" },
+                       destination: "https://www.youtube.com/watch?v=53yEyj0mjfo&ab_channel=funwunce" },
                      { image: "/songs/same-drugs.jpg",
                        name: "Same Drugs",
                        artist: "Chance the Rapper",
