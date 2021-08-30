@@ -60,6 +60,10 @@
   text-decoration-line: none;
 }
 
+.link:hover {
+  text-decoration-line: underline;
+}
+
 .infoTitle {
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;
