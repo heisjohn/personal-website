@@ -13,11 +13,13 @@ const AlbumsAndArtists = () => {
                    {'image': "/artists/anderson.jpg", 'name': "Anderson .Paak", 'link': 'https://www.youtube.com/watch?v=ferZnZ0_rSM&ab_channel=NPRMusic'},
                    {'image': "/artists/talking-heads.jpg", 'name': "Talking Heads", 'link': 'https://youtu.be/bE1Ro_wPGIU?t=20'},
                    {'image': "/artists/kendrick.jpg", 'name': "Kendrick Lamar", 'link': 'https://www.youtube.com/watch?v=cziv-WGRLcE&ab_channel=ArashTabatabaee'},
+                   {'image': "/artists/kanye.jpg", 'name': "Kanye West", 'link': 'https://youtu.be/7gHisR4xmOk?t=245'},
                    {'image': "/artists/arcade-fire.jpg", 'name': "Arcade Fire", 'link': 'https://www.youtube.com/watch?v=Ie0EJPcaeSQ&ab_channel=ApartmentSessions'}]
   const albums = [{'image': "/albums/malibu.jpg", 'name': "Malibu", 'artist': "Anderson .Paak", 'link': "https://www.youtube.com/watch?v=KXdW0g6jAxE&list=PLkLZNGcjKAQ_T6e9HD9YRiUcE85vouttE&ab_channel=AndersonPaak"},
                   {'image': "/albums/remain-in-light.jpg", 'name': "Remain in Light", 'artist': "Talking Heads", 'link': "https://www.youtube.com/watch?v=w6T_X7MXg40&list=PLfimnwaZdumi5_CxCzqG3Mpv1PqHvr2VW&ab_channel=TalkingHeads-Topic"},
                   {'image': "/albums/careful-kid.jpg", 'name': "Careful Kid", 'artist': "Yabadum", 'link': "https://www.youtube.com/watch?v=VxJbIJhImTU&list=PLCLwExT8jp9MSlpUD2ps_8jYqFix1XiBX&ab_channel=owenlewis"},
-                  {'image': "/albums/discovery.jpg", 'name': "Discovery", 'artist': "Daft Punk", 'link': "https://www.youtube.com/watch?v=A2VpR8HahKc&list=PLSdoVPM5WnndSQEXRz704yQkKwx76GvPV&ab_channel=DaftPunk"}]
+                  {'image': "/albums/discovery.jpg", 'name': "Discovery", 'artist': "Daft Punk", 'link': "https://www.youtube.com/watch?v=A2VpR8HahKc&list=PLSdoVPM5WnndSQEXRz704yQkKwx76GvPV&ab_channel=DaftPunk"},
+                  {'image': "/albums/late-registration.jpg", 'name': "Late Registration", 'artist': "Kanye West", 'link': "https://www.youtube.com/watch?v=Bwyu-SZ7g_E&list=PL8YH4mOwWryV4dtuaLQP1d4dsgW0ZmJl5&ab_channel=KanyeWest-Topic"},]
   return (
     <PhoneLayout backgroundImage="linear-gradient(#333438, #121212)" content={(
       <div className={styles.container}>
@@ -28,11 +30,14 @@ const AlbumsAndArtists = () => {
         <h1 className={styles.heading}>
           Favorite artists
         </h1>
+        <p className={styles.descriptionText}>
+          And some of my favorite videos of them
+        </p>
         <div className={styles.carouselContainer}>
           <CarouselProvider
             naturalSlideWidth={200}
             naturalSlideHeight={200}
-            totalSlides={5}
+            totalSlides={6}
             visibleSlides={2}
           >
             <Slider >
@@ -65,7 +70,7 @@ const AlbumsAndArtists = () => {
           <CarouselProvider
             naturalSlideWidth={200}
             naturalSlideHeight={216}
-            totalSlides={4}
+            totalSlides={5}
             visibleSlides={2}
           >
             <Slider className={styles.albumSlider}>
