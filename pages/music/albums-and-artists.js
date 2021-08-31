@@ -19,7 +19,7 @@ const AlbumsAndArtists = () => {
                   {'image': "/albums/remain-in-light.jpg", 'name': "Remain in Light", 'artist': "Talking Heads", 'link': "https://www.youtube.com/watch?v=w6T_X7MXg40&list=PLfimnwaZdumi5_CxCzqG3Mpv1PqHvr2VW&ab_channel=TalkingHeads-Topic"},
                   {'image': "/albums/careful-kid.jpg", 'name': "Careful Kid", 'artist': "Yabadum", 'link': "https://www.youtube.com/watch?v=VxJbIJhImTU&list=PLCLwExT8jp9MSlpUD2ps_8jYqFix1XiBX&ab_channel=owenlewis"},
                   {'image': "/albums/discovery.jpg", 'name': "Discovery", 'artist': "Daft Punk", 'link': "https://www.youtube.com/watch?v=A2VpR8HahKc&list=PLSdoVPM5WnndSQEXRz704yQkKwx76GvPV&ab_channel=DaftPunk"},
-                  {'image': "/albums/late-registration.jpg", 'name': "Late Registration", 'artist': "Kanye West", 'link': "https://www.youtube.com/watch?v=Bwyu-SZ7g_E&list=PL8YH4mOwWryV4dtuaLQP1d4dsgW0ZmJl5&ab_channel=KanyeWest-Topic"},]
+                  {'image': "/albums/late-registration.jpg", 'name': "Late Registration", 'artist': "Kanye West", 'link': "https://www.youtube.com/watch?v=R6dH8iBHzb4&list=PL8YH4mOwWryV4dtuaLQP1d4dsgW0ZmJl5&index=2&ab_channel=KanyeWest-Topic"},]
   return (
     <PhoneLayout backgroundImage="linear-gradient(#333438, #121212)" content={(
       <div className={styles.container}>
