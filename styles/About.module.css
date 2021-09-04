@@ -65,8 +65,9 @@
 }
 
 .infoTitle {
-  margin-top: 0.5vh;
-  margin-bottom: 0.5vh;
+  margin-top: 0.7vh;
+  margin-bottom: 0.6vh;
+  font-size: 1.4vh;
 }
 
 .infoContainer {

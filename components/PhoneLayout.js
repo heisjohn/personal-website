@@ -39,8 +39,11 @@ export default function PhoneLayout(props) {
           </div>
           <div className={styles.offContainer}>
             <Link href={"/home"} passHref>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img className={styles.image} src="/power.png" alt="power" />
+              <div className={styles.imageContainer}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img className={styles.image} src="/power.png" alt="power" />
+                <h1 className={styles.clickme}>Click me!</h1>
+              </div>
             </Link>
           </div>
         </div>

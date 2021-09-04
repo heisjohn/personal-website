@@ -32,6 +32,7 @@ const About = () => {
             <div className={styles.centered}>
               <p className={`${styles.description} ${styles.infoTitle}`}><b>John He</b></p>
             </div>
+            <div className={styles.infoLine} />
             <div className={styles.centered}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className={styles.image} src="/me-about.jpg" alt="me" />

@@ -12,7 +12,7 @@ const AlbumsAndArtists = () => {
   const artists = [{'image': "/artists/james-murphy.jpg", 'name': "LCD Soundsystem", 'link': 'https://www.youtube.com/watch?v=a9wnbPUgq6c&ab_channel=MaxKippax'},
                    {'image': "/artists/anderson.jpg", 'name': "Anderson .Paak", 'link': 'https://www.youtube.com/watch?v=ferZnZ0_rSM&ab_channel=NPRMusic'},
                    {'image': "/artists/talking-heads.jpg", 'name': "Talking Heads", 'link': 'https://youtu.be/bE1Ro_wPGIU?t=20'},
-                   {'image': "/artists/kendrick.jpg", 'name': "Kendrick Lamar", 'link': 'https://www.youtube.com/watch?v=cziv-WGRLcE&ab_channel=ArashTabatabaee'},
+                   {'image': "/artists/kendrick.jpg", 'name': "Kendrick Lamar", 'link': 'https://youtu.be/WPZJbfaXy60?t=130'},
                    {'image': "/artists/kanye.jpg", 'name': "Kanye West", 'link': 'https://youtu.be/7gHisR4xmOk?t=245'},
                    {'image': "/artists/arcade-fire.jpg", 'name': "Arcade Fire", 'link': 'https://www.youtube.com/watch?v=Ie0EJPcaeSQ&ab_channel=ApartmentSessions'}]
   const albums = [{'image': "/albums/malibu.jpg", 'name': "Malibu", 'artist': "Anderson .Paak", 'link': "https://www.youtube.com/watch?v=KXdW0g6jAxE&list=PLkLZNGcjKAQ_T6e9HD9YRiUcE85vouttE&ab_channel=AndersonPaak"},
