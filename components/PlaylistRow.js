@@ -1,11 +1,10 @@
 import styles from '../styles/PlaylistRow.module.css';
-import { useEffect, useState } from 'react';
 
 export default function PlaylistRow(props) {
   let audio;
   if(typeof Audio != "undefined") {
     audio = new Audio(props.audio);
-    audio.volume = 0.3;
+    audio.volume = 0.25;
   }
 
   const playAudio = () => {

@@ -41,19 +41,25 @@ const Songs = () => {
                        artist: "Kendrick Lamar",
                        time: "3:52",
                        audio: "/music-clips/i.mp3",
-                       destination: "https://www.youtube.com/watch?v=8aShfolR6w8&ab_channel=KendrickLamarVEVO" }]
-  const recent = [{ image: "/songs/cosmos.jpg",
+                       destination: "https://www.youtube.com/watch?v=8aShfolR6w8&ab_channel=KendrickLamarVEVO" },
+                     { image: "/songs/peter-pan.jpg",
+                       name: "Peter Pan",
+                       artist: "Arcade Fire",
+                       time: "2:49",
+                       audio: "/music-clips/peter-pan.mp3",
+                       destination: "https://www.youtube.com/watch?v=PAzNt2RDiv0&ab_channel=ArcadeFireVEVO" }]
+  const recent = [{ image: "/songs/let-me-down-easy.jpg",
+                    name: "Let Me Down Easy",
+                    artist: "Gang of Youths",
+                    time: "5:19",
+                    audio: "/music-clips/let-me-down-easy.mp3",
+                    destination: "https://www.youtube.com/watch?v=eeBf79q90js&ab_channel=gangofyouthsVEVO" },
+                  { image: "/songs/cosmos.jpg",
                     name: "Cosmos",
                     artist: "Yabadum",
                     time: "3:52",
                     audio: "/music-clips/cosmos.mp3",
                     destination: "https://www.youtube.com/watch?v=GNAJOQpxiIo&ab_channel=Yabadum-Topic" },
-                  { image: "/songs/sister-cities.jpg",
-                    name: "Sister Cities",
-                    artist: "Hop Along",
-                    time: "5:08",
-                    audio: "/music-clips/sister-cities.mp3",
-                    destination: "https://www.youtube.com/watch?v=SHs_5z9ikiw&ab_channel=SaddleCreek" },
                   { image: "/songs/come-to-life.jpg",
                     name: "Come to Life",
                     artist: "Kanye West",
@@ -71,42 +77,57 @@ const Songs = () => {
                     artist: "LCD Soundsystem",
                     time: "4:12",
                     audio: "/music-clips/time-to-get-away.mp3",
-                    destination: "https://www.youtube.com/watch?v=K1SKj0jV-6M&ab_channel=LCDSoundsystem-Topic" }]
+                    destination: "https://www.youtube.com/watch?v=K1SKj0jV-6M&ab_channel=LCDSoundsystem-Topic" },
+                  { image: "/songs/sister-cities.jpg",
+                    name: "Sister Cities",
+                    artist: "Hop Along",
+                    time: "5:08",
+                    audio: "/music-clips/sister-cities.mp3",
+                    destination: "https://www.youtube.com/watch?v=SHs_5z9ikiw&ab_channel=SaddleCreek" },
+                  { image: "/songs/sleeping-sickness.jpg",
+                    name: "Sleeping Sickness",
+                    artist: "City and Colour",
+                    time: "4:08",
+                    audio: "/music-clips/sleeping-sickness.mp3",
+                    destination: "https://www.youtube.com/watch?v=4ZKCkuIWZRg&ab_channel=CityAndColour-Topic" }]
 
   return (
-    <PhoneLayout backgroundImage="linear-gradient(#333438, #121212, #121212, #121212)" content={(
-      <div className={styles.container}>
-        <Head>
-          <title>John He | Music</title>
-          <meta property="og:title" content="John He | Music" key="title" />
-        </Head>
-        <h1 className={styles.heading}>
-          Favorite songs
-        </h1>
-        <p className={styles.descriptionText}>
-          Hover and click!
-        </p>
+    <PhoneLayout headerOpacity={0.30} content={(
+      <div className={styles.outerContainer}>
+        <div className={styles.scrollContainer}>
+          <div className={styles.container}>
+            <Head>
+              <title>John He | Music</title>
+              <meta property="og:title" content="John He | Music" key="title" />
+            </Head>
+            <h1 className={styles.heading}>
+              Favorite songs
+            </h1>
+            <p className={styles.descriptionText}>
+              Hover and click!
+            </p>
 
-        <div className={styles.playlistContainer}>
-          {favorites.map((song, i) => {
-            return (
-              <PlaylistRow key={i} image={song.image} name={song.name} artist={song.artist} time={song.time} audio={song.audio} destination={song.destination} />
-            );
-          })}
-        </div>
+            <div className={styles.playlistContainer}>
+              {favorites.map((song, i) => {
+                return (
+                  <PlaylistRow key={i} image={song.image} name={song.name} artist={song.artist} time={song.time} audio={song.audio} destination={song.destination} />
+                );
+              })}
+            </div>
 
-        <h1 className={styles.heading} style={{ marginTop: "1.4vh" }}>
-          Recent Favorites
-        </h1>
+            <h1 className={styles.heading} style={{ marginTop: "1.4vh" }}>
+              Recent Favorites
+            </h1>
 
-        <div className={styles.playlistContainer}>
-          {recent.map((song, i) => {
-            return (
-              <PlaylistRow key={i} image={song.image} name={song.name} artist={song.artist} time={song.time} audio={song.audio} destination={song.destination} />
-            );
-          })}
-        </div>
-
+            <div className={styles.playlistContainer}>
+              {recent.map((song, i) => {
+                return (
+                  <PlaylistRow key={i} image={song.image} name={song.name} artist={song.artist} time={song.time} audio={song.audio} destination={song.destination} />
+                );
+              })}
+            </div>
+          </div>
+        </div> 
         <div className={styles.bottomBar}>
           <Link href="/music/albums-and-artists" passHref >
             <div className={`${styles.bottomButton} ${styles.unselected}`}>
@@ -121,7 +142,7 @@ const Songs = () => {
             <p className={styles.bottomText}>Songs</p>
           </div>
         </div>
-      </div>
+      </div>  
     )} />
   );
 }

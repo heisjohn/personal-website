@@ -20,7 +20,7 @@ export default function PhoneLayout(props) {
 
   useEffect(() => {
     getTime();
-  })
+  });
 
   useEffect(() => {
     var timer = setInterval(() => getTime(), 1000);
@@ -63,8 +63,8 @@ export default function PhoneLayout(props) {
             <div className={styles.square} />
           </div>
         </Link>
-        <div className={styles.innerContainer} style={{backgroundImage: props.backgroundImage || "transparent", backgroundColor: props.backgroundColor || 'transparent'}}>
-          <div className={styles.headerContainer}>
+        <div className={styles.innerContainer}>
+          <div className={styles.headerContainer} style={{ backgroundColor: `rgba(0, 0, 0, ${props.headerOpacity})`}}>
             <p className={styles.headerText}>{time}</p>
             <div className={styles.headerRight}>
               <div className={styles.wifi} />

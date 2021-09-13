@@ -21,94 +21,96 @@ const AlbumsAndArtists = () => {
                   {'image': "/albums/discovery.jpg", 'name': "Discovery", 'artist': "Daft Punk", 'link': "https://www.youtube.com/watch?v=A2VpR8HahKc&list=PLSdoVPM5WnndSQEXRz704yQkKwx76GvPV&ab_channel=DaftPunk"},
                   {'image': "/albums/late-registration.jpg", 'name': "Late Registration", 'artist': "Kanye West", 'link': "https://www.youtube.com/watch?v=R6dH8iBHzb4&list=PL8YH4mOwWryV4dtuaLQP1d4dsgW0ZmJl5&index=2&ab_channel=KanyeWest-Topic"},]
   return (
-    <PhoneLayout backgroundImage="linear-gradient(#333438, #121212)" content={(
-      <div className={styles.container}>
-        <Head>
-          <title>John He | Music</title>
-          <meta property="og:title" content="John He | Music" key="title" />
-        </Head>
-        <h1 className={styles.heading}>
-          Favorite artists
-        </h1>
-        <p className={styles.descriptionText}>
-          And some of my favorite videos of them
-        </p>
-        <div className={styles.carouselContainer}>
-          <CarouselProvider
-            naturalSlideWidth={200}
-            naturalSlideHeight={200}
-            totalSlides={6}
-            visibleSlides={2}
-          >
-            <Slider >
-              {artists.map((artist, i) => {
-                return (
-                  <Slide index={i} key={i}>
-                    <MusicArtist image={artist.image} name={artist.name} destination={artist.link} />
-                  </Slide>
-                );
-              })}
-            </Slider>
-            <ButtonBack className={carouselStyles.hiddenButton}>
-              <div className={`${carouselStyles.arrowContainer} ${carouselStyles.left} ${carouselStyles.musicLeft}`}>
-                {/*eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/left-arrow.png" alt="left" className={carouselStyles.arrow} />
-              </div>
-            </ButtonBack>
-            <ButtonNext className={carouselStyles.hiddenButton}>
-              <div className={`${carouselStyles.arrowContainer} ${carouselStyles.right} ${carouselStyles.musicRight}`}>
-                {/*eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/right-arrow.png" alt="right" className={carouselStyles.arrow} />
-              </div>
-            </ButtonNext>
-          </CarouselProvider>
-        </div>
-        <h1 className={styles.heading}>
-          Favorite albums
-        </h1>
-        <div className={styles.carouselContainer}>
-          <CarouselProvider
-            naturalSlideWidth={200}
-            naturalSlideHeight={216}
-            totalSlides={5}
-            visibleSlides={2}
-          >
-            <Slider className={styles.albumSlider}>
-              {albums.map((album, i) => {
-                return (
-                  <Slide index={i} key={i}>
-                    <MusicAlbum image={album.image} name={album.name} artist={album.artist} destination={album.link} />
-                  </Slide>
-                );
-              })}
-            </Slider>
-            <ButtonBack className={carouselStyles.hiddenButton}>
-              <div className={`${carouselStyles.arrowContainer} ${carouselStyles.left} ${carouselStyles.musicLeft}`}>
-                {/*eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/left-arrow.png" alt="left" className={carouselStyles.arrow} />
-              </div>
-            </ButtonBack>
-            <ButtonNext className={carouselStyles.hiddenButton}>
-              <div className={`${carouselStyles.arrowContainer} ${carouselStyles.right} ${carouselStyles.musicRight}`}>
-                {/*eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/right-arrow.png" alt="right" className={carouselStyles.arrow} />
-              </div>
-            </ButtonNext>
-          </CarouselProvider>
-        </div>
-        <div className={styles.bottomBar}>
-          <div className={`${styles.bottomButton} ${styles.selected}`}>
-            {/*eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/album.png" alt="album" className={styles.bottomIcon} />
-            <p className={styles.bottomText}>Albums and Artists</p>
+    <PhoneLayout headerOpacity={0.30} content={(
+      <div className={styles.outerContainer}>
+        <div className={styles.container}>
+          <Head>
+            <title>John He | Music</title>
+            <meta property="og:title" content="John He | Music" key="title" />
+          </Head>
+          <h1 className={styles.heading}>
+            Favorite artists
+          </h1>
+          <p className={styles.descriptionText}>
+            And some of my favorite videos of them
+          </p>
+          <div className={styles.carouselContainer}>
+            <CarouselProvider
+              naturalSlideWidth={200}
+              naturalSlideHeight={200}
+              totalSlides={6}
+              visibleSlides={2}
+            >
+              <Slider >
+                {artists.map((artist, i) => {
+                  return (
+                    <Slide index={i} key={i}>
+                      <MusicArtist image={artist.image} name={artist.name} destination={artist.link} />
+                    </Slide>
+                  );
+                })}
+              </Slider>
+              <ButtonBack className={carouselStyles.hiddenButton}>
+                <div className={`${carouselStyles.arrowContainer} ${carouselStyles.left} ${carouselStyles.musicLeft}`}>
+                  {/*eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/left-arrow.png" alt="left" className={carouselStyles.arrow} />
+                </div>
+              </ButtonBack>
+              <ButtonNext className={carouselStyles.hiddenButton}>
+                <div className={`${carouselStyles.arrowContainer} ${carouselStyles.right} ${carouselStyles.musicRight}`}>
+                  {/*eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/right-arrow.png" alt="right" className={carouselStyles.arrow} />
+                </div>
+              </ButtonNext>
+            </CarouselProvider>
           </div>
-          <Link href="/music/songs" passHref>
-            <div className={`${styles.bottomButton} ${styles.unselected}`}>
+          <h1 className={styles.heading}>
+            Favorite albums
+          </h1>
+          <div className={styles.carouselContainer}>
+            <CarouselProvider
+              naturalSlideWidth={200}
+              naturalSlideHeight={216}
+              totalSlides={5}
+              visibleSlides={2}
+            >
+              <Slider className={styles.albumSlider}>
+                {albums.map((album, i) => {
+                  return (
+                    <Slide index={i} key={i}>
+                      <MusicAlbum image={album.image} name={album.name} artist={album.artist} destination={album.link} />
+                    </Slide>
+                  );
+                })}
+              </Slider>
+              <ButtonBack className={carouselStyles.hiddenButton}>
+                <div className={`${carouselStyles.arrowContainer} ${carouselStyles.left} ${carouselStyles.musicLeft}`}>
+                  {/*eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/left-arrow.png" alt="left" className={carouselStyles.arrow} />
+                </div>
+              </ButtonBack>
+              <ButtonNext className={carouselStyles.hiddenButton}>
+                <div className={`${carouselStyles.arrowContainer} ${carouselStyles.right} ${carouselStyles.musicRight}`}>
+                  {/*eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/right-arrow.png" alt="right" className={carouselStyles.arrow} />
+                </div>
+              </ButtonNext>
+            </CarouselProvider>
+          </div>
+          <div className={styles.bottomBar} style={{ position: "absolute", bottom: 0 }}>
+            <div className={`${styles.bottomButton} ${styles.selected}`}>
               {/*eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/song.png" alt="song" className={styles.bottomIcon} />
-              <p className={styles.bottomText}>Songs</p>
+              <img src="/album.png" alt="album" className={styles.bottomIcon} />
+              <p className={styles.bottomText}>Albums and Artists</p>
             </div>
-          </Link>
+            <Link href="/music/songs" passHref>
+              <div className={`${styles.bottomButton} ${styles.unselected}`}>
+                {/*eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/song.png" alt="song" className={styles.bottomIcon} />
+                <p className={styles.bottomText}>Songs</p>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     )} />

@@ -1,8 +1,15 @@
-.container {
-  background-color: white;
+.outerContainer {
+  background-color: #555555;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   flex: 1;
+  border-radius: 0.5vh;
+}
+
+.container {
+  margin-top: 2.42vh;
+  background-color: #EBECF0;
   width: 100%;
   overflow-y: scroll;
 }
@@ -29,6 +36,7 @@
   padding: 1.3vh;
   padding-bottom: 3vh;
   box-shadow: 0vh -0.15vh 0.3vh lightgray;
+  background-color: white;
 }
 
 .name {
