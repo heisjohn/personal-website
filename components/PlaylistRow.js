@@ -1,5 +1,5 @@
 import styles from '../styles/PlaylistRow.module.css';
-import { isMobile, deviceDetect } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 
 export default function PlaylistRow(props) {
   let audio;
@@ -34,8 +34,6 @@ export default function PlaylistRow(props) {
       </a>
     )
   }
-
-  console.log(deviceDetect());
 
   return (
     <OuterContainer>
