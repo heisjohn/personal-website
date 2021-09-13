@@ -6,6 +6,7 @@ import PlaylistRow from "../../components/PlaylistRow.js"
 import Head from 'next/head';
 
 const Songs = () => {
+  global.audio = null;
   const favorites = [{ image: "/songs/the-dreamer.jpg", 
                        name: "The Dreamer", 
                        artist: "Anderson .Paak, Talib Kweli, Timan Family Choir", 

@@ -2,31 +2,46 @@ import styles from '../styles/PlaylistRow.module.css';
 import { isMobile } from "react-device-detect";
 
 export default function PlaylistRow(props) {
-  let audio;
-  if(typeof Audio != "undefined") {
-    audio = new Audio(props.audio);
-    audio.volume = 0.25;
-  }
 
   const playAudio = () => {
     if (typeof Audio != "undefined") {
-      audio.play();
+      if (!global.audio || (global.audio && global.audio.name != props.audio)) {
+        global.audio = new Audio(props.audio);
+        global.audio.name = props.audio;
+      }
+      global.audio.isPlaying = true;
+      global.audio.volume = 0.25;
+      global.audio.play();
+    }
+  }
+
+  const playAudioMobile = () => {
+    if (typeof Audio != "undefined") {
+      if (global.audio) {
+        global.audio.pause();
+        if (global.audio.name == props.audio && global.audio.isPlaying && !global.audio.ended) {
+          global.audio.isPlaying = false;
+          return;
+        }
+      }
+      playAudio();
     }
   }
 
   const OuterContainer = containerProps => {
     if (isMobile) {
-      <div className={styles.container} onClick={playAudio}>
-        {containerProps.children}
-      </div>
+      return (
+        <div className={styles.container} onClick={playAudioMobile}>
+          {containerProps.children}
+        </div>
+      )
     }
     return (
       <a href={props.destination} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
         <div className={styles.container} onMouseEnter={playAudio}
           onMouseLeave={() => {
             if(typeof Audio != "undefined") {
-              audio.pause();
-              audio.currentTime = 0;
+              global.audio.pause();
             }
           }}>
           {containerProps.children}
