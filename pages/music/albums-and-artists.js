@@ -21,7 +21,7 @@ const AlbumsAndArtists = () => {
                   {'image': "/albums/discovery.jpg", 'name': "Discovery", 'artist': "Daft Punk", 'link': "https://www.youtube.com/watch?v=A2VpR8HahKc&list=PLSdoVPM5WnndSQEXRz704yQkKwx76GvPV&ab_channel=DaftPunk"},
                   {'image': "/albums/late-registration.jpg", 'name': "Late Registration", 'artist': "Kanye West", 'link': "https://www.youtube.com/watch?v=R6dH8iBHzb4&list=PL8YH4mOwWryV4dtuaLQP1d4dsgW0ZmJl5&index=2&ab_channel=KanyeWest-Topic"},]
   return (
-    <PhoneLayout headerOpacity={0.30} content={(
+    <PhoneLayout headerOpacity={0.45} content={(
       <div className={styles.outerContainer}>
         <div className={styles.container}>
           <Head>

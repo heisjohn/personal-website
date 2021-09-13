@@ -14,6 +14,7 @@
   flex-direction: column;
   overflow-y: scroll;
   padding-bottom: 1vh;
+  padding-top: 4.22vh;
 }
 
 .container {

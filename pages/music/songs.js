@@ -92,40 +92,38 @@ const Songs = () => {
                     destination: "https://www.youtube.com/watch?v=4ZKCkuIWZRg&ab_channel=CityAndColour-Topic" }]
 
   return (
-    <PhoneLayout headerOpacity={0.30} content={(
+    <PhoneLayout headerOpacity={0.45} content={(
       <div className={styles.outerContainer}>
         <div className={styles.scrollContainer}>
-          <div className={styles.container}>
-            <Head>
-              <title>John He | Music</title>
-              <meta property="og:title" content="John He | Music" key="title" />
-            </Head>
-            <h1 className={styles.heading}>
-              Favorite songs
-            </h1>
-            <p className={styles.descriptionText}>
-              Hover and click!
-            </p>
+          <Head>
+            <title>John He | Music</title>
+            <meta property="og:title" content="John He | Music" key="title" />
+          </Head>
+          <h1 className={styles.heading}>
+            Favorite songs
+          </h1>
+          <p className={styles.descriptionText}>
+            Hover and click!
+          </p>
 
-            <div className={styles.playlistContainer}>
-              {favorites.map((song, i) => {
-                return (
-                  <PlaylistRow key={i} image={song.image} name={song.name} artist={song.artist} time={song.time} audio={song.audio} destination={song.destination} />
-                );
-              })}
-            </div>
+          <div className={styles.playlistContainer}>
+            {favorites.map((song, i) => {
+              return (
+                <PlaylistRow key={i} image={song.image} name={song.name} artist={song.artist} time={song.time} audio={song.audio} destination={song.destination} />
+              );
+            })}
+          </div>
 
-            <h1 className={styles.heading} style={{ marginTop: "1.4vh" }}>
-              Recent Favorites
-            </h1>
+          <h1 className={styles.heading} style={{ marginTop: "1.4vh" }}>
+            Recent Favorites
+          </h1>
 
-            <div className={styles.playlistContainer}>
-              {recent.map((song, i) => {
-                return (
-                  <PlaylistRow key={i} image={song.image} name={song.name} artist={song.artist} time={song.time} audio={song.audio} destination={song.destination} />
-                );
-              })}
-            </div>
+          <div className={styles.playlistContainer}>
+            {recent.map((song, i) => {
+              return (
+                <PlaylistRow key={i} image={song.image} name={song.name} artist={song.artist} time={song.time} audio={song.audio} destination={song.destination} />
+              );
+            })}
           </div>
         </div> 
         <div className={styles.bottomBar}>
