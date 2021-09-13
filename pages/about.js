@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 const About = () => {
   return (
-    <PhoneLayout backgroundImage="radial-gradient(#35363A, #35363A)" content={(
+    <PhoneLayout backgroundImage="radial-gradient(#555555, #555555)" content={(
       <div className={styles.container}>
         <Head>
           <title>John He | About</title>
