@@ -36,29 +36,31 @@ const Photos = () => {
   const i = index % photos.length;
   
   return (
-    <PhoneLayout backgroundImage="radial-gradient(#333438, #202125)" content={(
+    <PhoneLayout headerOpacity={0.5} content={(
       <>
         <Head>
           <title>John He | Photos</title>
           <meta property="og:title" content="John He | Photos" key="title" />
         </Head>
-        <div className={styles.header}>
-          <h1 className={styles.title}>Photos</h1>
-        </div>
-        <div className={styles.carouselContainer}>
-          {/*eslint-disable-next-line @next/next/no-img-element */}
-          <img src={photos[i]} alt={descriptions[i]} className={styles.image} /> 
-          <div className={`${carouselStyles.arrowContainer} ${carouselStyles.left}`} onClick={goRight}>
-            {/*eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/left-arrow.png" alt="left" className={carouselStyles.arrow} />
+        <div className={styles.outerContainer}>
+          <div className={styles.header}>
+            <h1 className={styles.title}>Photos</h1>
           </div>
-          <div className={`${carouselStyles.arrowContainer} ${carouselStyles.right}`} onClick={goLeft}>
+          <div className={styles.carouselContainer}>
             {/*eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/right-arrow.png" alt="right" className={carouselStyles.arrow} />
+            <img src={photos[i]} alt={descriptions[i]} className={styles.image} /> 
+            <div className={`${carouselStyles.arrowContainer} ${carouselStyles.left}`} onClick={goRight}>
+              {/*eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/left-arrow.png" alt="left" className={carouselStyles.arrow} />
+            </div>
+            <div className={`${carouselStyles.arrowContainer} ${carouselStyles.right}`} onClick={goLeft}>
+              {/*eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/right-arrow.png" alt="right" className={carouselStyles.arrow} />
+            </div>
           </div>
-        </div>
-        <div className={styles.carouselContainer}>
-          <p1 className={styles.caption}>{descriptions[i]}</p1>
+          <div className={styles.carouselContainer}>
+            <p1 className={styles.caption}>{descriptions[i]}</p1>
+          </div>
         </div>
       </>
     )} />

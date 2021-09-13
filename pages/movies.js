@@ -18,17 +18,17 @@ const Movies = () => {
                   { image: "/movie-posters/requiem.jpg", name: "Requiem for a Dream", trailer: "https://www.youtube.com/embed/QBwzN4v1vA0" }];
   const [trailer, setTrailer] = useState(movies[0].trailer);
   return (
-    <PhoneLayout backgroundImage="radial-gradient(#1B1B1B, #1B1B1B)" content={(
+    <PhoneLayout headerOpacity={0} content={(
       <>
         <Head>
           <title>John He | Movies</title>
           <meta property="og:title" content="John He | Movies" key="title" />
         </Head>
-        <div className={styles.header}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className={styles.image} src="/movies-title.png" alt="movies" />
-        </div>
-        <div className={styles.container}>
+        <div className={styles.outerContainer}>
+          <div className={styles.header}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className={styles.image} src="/movies-title.png" alt="movies" />
+          </div>
           <iframe className={styles.trailer}
             src={trailer}>
           </iframe>
@@ -68,7 +68,7 @@ const Movies = () => {
               </ButtonNext>
             </CarouselProvider>
           </div>
-        </div>
+        </div>  
       </>
     )} />
   );

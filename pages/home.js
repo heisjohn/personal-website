@@ -5,7 +5,7 @@ import Head from 'next/head';
 
 const Home = () => {
   return (
-    <PhoneLayout backgroundImage="url(/background.png)" content={(
+    <PhoneLayout headerOpacity={0} content={(
       <>
         <Head>
           <title>John He | Home</title>
