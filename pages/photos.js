@@ -11,14 +11,14 @@ const Photos = () => {
                   "/photos/sequoia-2.jpg", "/photos/petrified.jpg"];
   const descriptions = ["Me and Desi Nainar (#1 two person team) at the Math Team state competition, Sophomore year of high school",
                         "Turnabout, Senior year of high school",
-                        "White Sands National Park, Sophomore year of college",
-                        "White Sands National Park, Sophomore year of college",
-                        "Saguaro National Park, Sophomore year of college",
-                        "Saguaro National Park, Sophomore year of college",
-                        "San Francisco, Sophomore year of college",
-                        "Sequoia National Park, Sophomore year of college",
-                        "Sequoia National Park, Sophomore year of college",
-                        "Petrified Forest National Park, Sophomore year of college"]
+                        "White Sands National Park, second year of college",
+                        "White Sands National Park, second year of college",
+                        "Saguaro National Park, second year of college",
+                        "Saguaro National Park, second year of college",
+                        "San Francisco, second year of college",
+                        "Sequoia National Park, second year of college",
+                        "Sequoia National Park, second year of college",
+                        "Petrified Forest National Park, second year of college"]
   const [index, setIndex] = useState(photos.length - 1);
 
   const goLeft = () => {
