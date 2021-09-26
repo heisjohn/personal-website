@@ -8,9 +8,9 @@ import Head from 'next/head';
 
 const Photos = () => {
   const posts = [{ photos: ["/photos/petrified.jpg"], description: "Petrified Forest National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1 },
-                { photos: ["/photos/sequoia.jpg", "/photos/sequoia-2.jpg"], description: "Sequoia National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1.35 },
+                { photos: ["/photos/sequoia.jpg", "/photos/sequoia-2.jpg"], description: "Large trees at Sequoia National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1.35 },
                 { photos: ["/photos/san-francisco.jpg"], description: "By the Golden Gate Bridge in San Francisco", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1 },
-                { photos: ["/photos/saguaro.jpg", "/photos/saguaro-3.jpg"], description: "Chilling with the cactuses at Saguaro National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1.4 },
+                { photos: ["/photos/saguaro.jpg", "/photos/saguaro-3.jpg"], description: "Large cacti at Saguaro National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1.4 },
                 { photos: ["/photos/white-sands.jpg", "/photos/white-sands-2.jpg",], description: "Sledding at White Sands National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1.2 },
                 { photos: ["/photos/turnabout.jpg"], description: "My final Turnabout", date: "2019, SENIOR YEAR OF HIGH SCHOOL", ratio: 1 },
                 { photos: ["/photos/math-team.jpg"], description: "Me and Desi Nainar (#1 two person team) at the Math Team state competition", date: "2017, SOPHOMORE YEAR OF HIGH SCHOOL", ratio: 1 }]
