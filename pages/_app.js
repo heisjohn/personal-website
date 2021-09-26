@@ -9,6 +9,11 @@ export default function MyApp({ Component, pageProps }) {
         <meta property="og:title" content="John He" key="title" />
       </Head>
       <Component {...pageProps} />
+      <style jsx global>{`
+        body {
+          margin: 0;
+        }
+      `}</style>
     </>
   );
 }

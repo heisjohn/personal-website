@@ -72,7 +72,7 @@ const About = () => {
                   <p className={styles.infoTextLeft}><b>Skills</b></p>
                 </div>
                 <div className={styles.infoColumn}>
-                  <p className={styles.infoTextRight}>Python, Java, JavaScript<br />React Native, React, Next.js<br />HTML, CSS</p>
+                  <p className={styles.infoTextRight}>Python, Java, JavaScript, C, C#, SQL<br />React Native, React, Next.js<br />HTML, CSS</p>
                 </div>
               </div>
             </div>
