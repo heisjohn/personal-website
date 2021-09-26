@@ -11,7 +11,7 @@ import Head from 'next/head';
 const Movies = () => {
   const movies = [{ image: "/movie-posters/gone-girl.jpg", name: "Gone Girl", trailer: "https://www.youtube.com/embed/2-_-1nJf8Vg"},
                   { image: "/movie-posters/memento.jpg", name: "Memento", trailer: "https://www.youtube.com/embed/4CV41hoyS8A" },
-                  { image: "/movie-posters/three-billboards.jpg", name: "Three Billboards Outside Ebbing, Missouri", trailer: "https://www.youtube.com/embed/Jit3YhGx5pU" },
+                  { image: "/movie-posters/three-billboards.jpg", name: "Three Billboards Outside Ebbing, Missouri", trailer: "https://www.youtube.com/embed/KwC5gazxFQc" },
                   { image: "/movie-posters/miracle.jpg", name: "Miracle in Cell No.7", trailer: "https://www.youtube.com/embed/rAsBlmSIksk" },
                   { image: "/movie-posters/district-9.jpg", name: "District 9", trailer: "https://www.youtube.com/embed/DyLUwOcR5pk" },
                   { image: "/movie-posters/pancreas.jpg", name: "I Want to Eat Your Pancreas", trailer: "https://www.youtube.com/embed/MmoBvmJA9XI" },
