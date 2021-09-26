@@ -1,7 +1,6 @@
 import PhoneLayout from '../components/PhoneLayout.js';
 import styles from '../styles/Photos.module.css';
 import PictureCard from '../components/PictureCard.js';
-import { useState } from 'react';
 import Head from 'next/head';
 
 /* eslint-disable @next/next/no-img-element */
@@ -12,7 +11,7 @@ const Photos = () => {
                 { photos: ["/photos/san-francisco.jpg"], description: "By the Golden Gate Bridge in San Francisco", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1 },
                 { photos: ["/photos/saguaro.jpg", "/photos/saguaro-3.jpg"], description: "Large cacti at Saguaro National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1.4 },
                 { photos: ["/photos/white-sands.jpg", "/photos/white-sands-2.jpg",], description: "Sledding at White Sands National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1.2 },
-                { photos: ["/photos/turnabout.jpg"], description: "My final Turnabout", date: "2019, SENIOR YEAR OF HIGH SCHOOL", ratio: 1 },
+                { photos: ["/photos/turnabout.jpg", "/photos/math-team-2.jpg"], description: "My final Turnabout and my final Math Team meet (where we placed 1st in the state!)", date: "2019, SENIOR YEAR OF HIGH SCHOOL", ratio: 0.8 },
                 { photos: ["/photos/math-team.jpg"], description: "Me and Desi Nainar (#1 two person team) at the Math Team state competition", date: "2017, SOPHOMORE YEAR OF HIGH SCHOOL", ratio: 1 }]
   return (
     <PhoneLayout headerOpacity={0.5} content={(
