@@ -5,6 +5,8 @@ import Link from "next/link";
 import PlaylistRow from "../../components/PlaylistRow.js"
 import Head from 'next/head';
 
+/* eslint-disable @next/next/no-img-element */
+
 const Songs = () => {
   global.audio = null;
   const favorites = [{ image: "/songs/the-dreamer.jpg", 
@@ -130,13 +132,11 @@ const Songs = () => {
         <div className={styles.bottomBar}>
           <Link href="/music/albums-and-artists" passHref >
             <div className={`${styles.bottomButton} ${styles.unselected}`}>
-              {/*eslint-disable-next-line @next/next/no-img-element */}
               <img src="/album.png" alt="album" className={styles.bottomIcon} />
               <p className={styles.bottomText}>Albums and Artists</p>
             </div>
           </Link>
           <div className={`${styles.bottomButton} ${styles.selected}`}>
-            {/*eslint-disable-next-line @next/next/no-img-element */}
             <img src="/song.png" alt="song" className={styles.bottomIcon} />
             <p className={styles.bottomText}>Songs</p>
           </div>

@@ -15,6 +15,12 @@
   overflow-y: scroll;
   padding-bottom: 1vh;
   padding-top: 4.22vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .container {

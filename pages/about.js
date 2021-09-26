@@ -45,7 +45,7 @@ const About = () => {
                   <p className={styles.infoTextLeft}><b>Born</b></p>
                 </div>
                 <div className={styles.infoColumn}>
-                <p className={styles.infoTextRight}>September 2001 (age 19) <br /> Evanston, Illinois</p>
+                <p className={styles.infoTextRight}>September 2001 (age 20) <br /> Evanston, Illinois</p>
                 </div>
               </div>
               <div className={styles.infoLine} />

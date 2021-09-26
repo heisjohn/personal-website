@@ -68,7 +68,7 @@ export default function PhoneLayout(props) {
             <p className={styles.headerText}>{time}</p>
             <div className={styles.headerRight}>
               <div className={styles.wifi} />
-              <p className={styles.headerText}>19%</p>
+              <p className={styles.headerText}>20%</p>
               <div className={styles.battery} />
             </div>
           </div>

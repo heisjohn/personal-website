@@ -50,6 +50,7 @@
   height: 0;
   border-width: 0;
   padding: 0;
+  position: absolute;
 }
 
 .moviesLeft {
@@ -62,4 +63,12 @@
   border-top-left-radius: 3vh;
   border-bottom-left-radius: 3vh;
   height: 20.5vh;
+}
+
+.photosSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }

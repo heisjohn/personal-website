@@ -8,6 +8,8 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import Link from 'next/link';
 import Head from 'next/head';
 
+/* eslint-disable @next/next/no-img-element */
+
 const AlbumsAndArtists = () => {
   const artists = [{'image': "/artists/james-murphy.jpg", 'name': "LCD Soundsystem", 'link': 'https://www.youtube.com/watch?v=a9wnbPUgq6c&ab_channel=MaxKippax'},
                    {'image': "/artists/anderson.jpg", 'name': "Anderson .Paak", 'link': 'https://www.youtube.com/watch?v=ferZnZ0_rSM&ab_channel=NPRMusic'},
@@ -52,13 +54,11 @@ const AlbumsAndArtists = () => {
               </Slider>
               <ButtonBack className={carouselStyles.hiddenButton}>
                 <div className={`${carouselStyles.arrowContainer} ${carouselStyles.left} ${carouselStyles.musicLeft}`}>
-                  {/*eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/left-arrow.png" alt="left" className={carouselStyles.arrow} />
                 </div>
               </ButtonBack>
               <ButtonNext className={carouselStyles.hiddenButton}>
                 <div className={`${carouselStyles.arrowContainer} ${carouselStyles.right} ${carouselStyles.musicRight}`}>
-                  {/*eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/right-arrow.png" alt="right" className={carouselStyles.arrow} />
                 </div>
               </ButtonNext>
@@ -85,13 +85,11 @@ const AlbumsAndArtists = () => {
               </Slider>
               <ButtonBack className={carouselStyles.hiddenButton}>
                 <div className={`${carouselStyles.arrowContainer} ${carouselStyles.left} ${carouselStyles.musicLeft}`}>
-                  {/*eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/left-arrow.png" alt="left" className={carouselStyles.arrow} />
                 </div>
               </ButtonBack>
               <ButtonNext className={carouselStyles.hiddenButton}>
                 <div className={`${carouselStyles.arrowContainer} ${carouselStyles.right} ${carouselStyles.musicRight}`}>
-                  {/*eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/right-arrow.png" alt="right" className={carouselStyles.arrow} />
                 </div>
               </ButtonNext>
@@ -99,13 +97,11 @@ const AlbumsAndArtists = () => {
           </div>
           <div className={styles.bottomBar} style={{ position: "absolute", bottom: 0 }}>
             <div className={`${styles.bottomButton} ${styles.selected}`}>
-              {/*eslint-disable-next-line @next/next/no-img-element */}
               <img src="/album.png" alt="album" className={styles.bottomIcon} />
               <p className={styles.bottomText}>Albums and Artists</p>
             </div>
             <Link href="/music/songs" passHref>
               <div className={`${styles.bottomButton} ${styles.unselected}`}>
-                {/*eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/song.png" alt="song" className={styles.bottomIcon} />
                 <p className={styles.bottomText}>Songs</p>
               </div>

@@ -1,40 +1,19 @@
 import PhoneLayout from '../components/PhoneLayout.js';
 import styles from '../styles/Photos.module.css';
-import carouselStyles from '../styles/Carousel.module.css';
+import PictureCard from '../components/PictureCard.js';
 import { useState } from 'react';
 import Head from 'next/head';
 
+/* eslint-disable @next/next/no-img-element */
+
 const Photos = () => {
-  const photos = ["/photos/math-team.jpg", "/photos/turnabout.jpg", 
-                  "/photos/white-sands.jpg", "/photos/white-sands-2.jpg", "/photos/saguaro.jpg", 
-                  "/photos/saguaro-3.jpg", "/photos/san-francisco.jpg", "/photos/sequoia.jpg", 
-                  "/photos/sequoia-2.jpg", "/photos/petrified.jpg"];
-  const descriptions = ["Me and Desi Nainar (#1 two person team) at the Math Team state competition, Sophomore year of high school",
-                        "Turnabout, Senior year of high school",
-                        "White Sands National Park, second year of college",
-                        "White Sands National Park, second year of college",
-                        "Saguaro National Park, second year of college",
-                        "Saguaro National Park, second year of college",
-                        "San Francisco, second year of college",
-                        "Sequoia National Park, second year of college",
-                        "Sequoia National Park, second year of college",
-                        "Petrified Forest National Park, second year of college"]
-  const [index, setIndex] = useState(photos.length - 1);
-
-  const goLeft = () => {
-    if (index === 0) {
-      setIndex(photos.length);
-    } else {
-      setIndex(index - 1);
-    }
-  }
-
-  const goRight = () => {
-    setIndex(index + 1);
-  }
-
-  const i = index % photos.length;
-  
+  const posts = [{ photos: ["/photos/petrified.jpg"], description: "Petrified Forest National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1 },
+                { photos: ["/photos/sequoia.jpg", "/photos/sequoia-2.jpg"], description: "Sequoia National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1.35 },
+                { photos: ["/photos/san-francisco.jpg"], description: "By the Golden Gate Bridge in San Francisco", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1 },
+                { photos: ["/photos/saguaro.jpg", "/photos/saguaro-3.jpg"], description: "Chilling with the cactuses at Saguaro National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1.4 },
+                { photos: ["/photos/white-sands.jpg", "/photos/white-sands-2.jpg",], description: "Sledding at White Sands National Park", date: "2021, SECOND YEAR OF COLLEGE", ratio: 1.2 },
+                { photos: ["/photos/turnabout.jpg"], description: "My final Turnabout", date: "2019, SENIOR YEAR OF HIGH SCHOOL", ratio: 1 },
+                { photos: ["/photos/math-team.jpg"], description: "Me and Desi Nainar (#1 two person team) at the Math Team state competition", date: "2017, SOPHOMORE YEAR OF HIGH SCHOOL", ratio: 1 }]
   return (
     <PhoneLayout headerOpacity={0.5} content={(
       <>
@@ -44,22 +23,15 @@ const Photos = () => {
         </Head>
         <div className={styles.outerContainer}>
           <div className={styles.header}>
-            <h1 className={styles.title}>Photos</h1>
+            <img src="/photos-logo.png" alt="photo" className={styles.logo} />
+            <div className={styles.line} />
           </div>
-          <div className={styles.carouselContainer}>
-            {/*eslint-disable-next-line @next/next/no-img-element */}
-            <img src={photos[i]} alt={descriptions[i]} className={styles.image} /> 
-            <div className={`${carouselStyles.arrowContainer} ${carouselStyles.left}`} onClick={goRight}>
-              {/*eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/left-arrow.png" alt="left" className={carouselStyles.arrow} />
-            </div>
-            <div className={`${carouselStyles.arrowContainer} ${carouselStyles.right}`} onClick={goLeft}>
-              {/*eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/right-arrow.png" alt="right" className={carouselStyles.arrow} />
-            </div>
-          </div>
-          <div className={styles.carouselContainer}>
-            <p1 className={styles.caption}>{descriptions[i]}</p1>
+          <div className={styles.main}>
+            {posts.map((post, i) => {
+              return (
+                <PictureCard photos={post.photos} description={post.description} date={post.date} ratio={post.ratio} index={i} key={i} />
+              );
+            })}
           </div>
         </div>
       </>

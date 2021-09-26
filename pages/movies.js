@@ -6,6 +6,8 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import { useState } from 'react';
 import Head from 'next/head';
 
+/* eslint-disable @next/next/no-img-element */
+
 const Movies = () => {
   const movies = [{ image: "/movie-posters/gone-girl.jpg", name: "Gone Girl", trailer: "https://www.youtube.com/embed/2-_-1nJf8Vg"},
                   { image: "/movie-posters/memento.jpg", name: "Memento", trailer: "https://www.youtube.com/embed/4CV41hoyS8A" },
@@ -26,7 +28,6 @@ const Movies = () => {
         </Head>
         <div className={styles.outerContainer}>
           <div className={styles.header}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className={styles.image} src="/movies-title.png" alt="movies" />
           </div>
           <iframe className={styles.trailer}
@@ -48,7 +49,6 @@ const Movies = () => {
                 {movies.map((movie, i) => {
                   return (
                     <Slide index={i} key={i}>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img className={styles.poster} src={movie.image} alt={movie.name} onClick={() => {setTrailer(movie.trailer)}}/>
                     </Slide>
                   );
@@ -56,13 +56,11 @@ const Movies = () => {
               </Slider>
               <ButtonBack className={carouselStyles.hiddenButton}>
                 <div className={`${carouselStyles.arrowContainer} ${carouselStyles.left} ${carouselStyles.moviesLeft}`}>
-                  {/*eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/left-arrow.png" alt="left" className={carouselStyles.arrow} />
                 </div>
               </ButtonBack>
               <ButtonNext className={carouselStyles.hiddenButton}>
                 <div className={`${carouselStyles.arrowContainer} ${carouselStyles.right} ${carouselStyles.moviesRight}`}>
-                  {/*eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/right-arrow.png" alt="right" className={carouselStyles.arrow} />
                 </div>
               </ButtonNext>
