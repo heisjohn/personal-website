@@ -15,7 +15,7 @@
   width: 7vh;
   margin-bottom: 0.3vh;
   margin-top: 0.2vh;
-  margin-left: 1vh;
+  margin-left: 1.3vh;
 }
 
 .main {
@@ -54,9 +54,9 @@
 .imageHeaderIcon {
   background-image: url(/icons/me.png);
   background-size: cover;
-  width: 2.4vh;
-  height: 2.4vh;
-  border-radius: 1.2vh;
+  width: 2.5vh;
+  height: 2.5vh;
+  border-radius: 1.25vh;
 }
 
 .imageHeader {
