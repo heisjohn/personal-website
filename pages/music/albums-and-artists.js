@@ -34,7 +34,7 @@ const AlbumsAndArtists = () => {
             Favorite artists
           </h1>
           <p className={styles.descriptionText}>
-            And some of my favorite videos of them
+            Click to see some of my favorite videos of them
           </p>
           <div className={styles.carouselContainer}>
             <CarouselProvider
