@@ -24,11 +24,11 @@ const About = () => {
               - including my first online year of college. I attended Libertyville High School, where I took my first four computer science classes (shoutout to Ms. Elmore!). 
               I also played clarinet in the band and participated in Math Team, Coding Cats, Worldwide Youth in Science and Engineering, and Chess Club. <br/><br/> Currently, 
               I am a Junior undergraduate student at the University of California, Berkeley where I am pursuing a bachelor&apos;s degree in computer science. I intend to 
-              focus on machine learning in my upper-division courses. Outside of school, I work part-time as a full-stack software engineer at{` `}
-              <a href="https://www.doriot.com/" target="_blank" rel="noopener noreferrer" className={styles.link}>Doriot</a>, a startup based at Indiana University, where I am 
-              working with a team to create an educational app about startup investing. <br/><br/>In my free time I enjoy playing chess casually (about 1900 ELO on{` `}
+              focus on machine learning in my upper-division courses. Next summer, I will be working as a software engineering intern at Roblox. In the past, I have worked as full-stack software engineer at{` `}
+              <a href="https://www.doriot.com/" target="_blank" rel="noopener noreferrer" className={styles.link}>Doriot</a>, a startup based at Indiana University, where I helped develop Fantasy Startup, 
+              an educational app about startup investing. <br/><br/>In my free time I enjoy playing chess casually (nearing 2000 ELO on{` `}
               <a href="https://lichess.org/@/johnhe" target="_blank" rel="noopener noreferrer" className={styles.link}>lichess</a>), playing video games, watching movies, 
-              and discovering new music.</p>
+              and listening to all genres of music.</p>
             <div className={styles.infoContainer}>
               <div className={styles.centered}>
                 <p className={`${styles.description} ${styles.infoTitle}`}><b>John He</b></p>
