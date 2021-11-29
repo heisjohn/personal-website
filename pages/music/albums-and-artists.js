@@ -11,7 +11,7 @@ import Head from 'next/head';
 /* eslint-disable @next/next/no-img-element */
 
 const AlbumsAndArtists = () => {
-  const artists = [{'image': "/artists/james-murphy.jpg", 'name': "LCD Soundsystem", 'link': 'https://www.youtube.com/watch?v=a9wnbPUgq6c&ab_channel=MaxKippax'},
+  const artists = [{'image': "/artists/james-murphy.jpg", 'name': "LCD Soundsystem", 'link': 'https://www.youtube.com/watch?v=5gIhrPGyu6U'},
                    {'image': "/artists/anderson.jpg", 'name': "Anderson .Paak", 'link': 'https://www.youtube.com/watch?v=ferZnZ0_rSM&ab_channel=NPRMusic'},
                    {'image': "/artists/talking-heads.jpg", 'name': "Talking Heads", 'link': 'https://youtu.be/bE1Ro_wPGIU?t=20'},
                    {'image': "/artists/kendrick.jpg", 'name': "Kendrick Lamar", 'link': 'https://youtu.be/WPZJbfaXy60?t=130'},
